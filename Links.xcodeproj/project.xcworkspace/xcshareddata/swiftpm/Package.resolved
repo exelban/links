@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "updater",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/exelban/updater",
+      "state" : {
+        "branch" : "master",
+        "revision" : "5905b9cb66122a80edb84d9eb27d80ed8f26f7af"
+      }
+    }
+  ],
+  "version" : 2
+}
