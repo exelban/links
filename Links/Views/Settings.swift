@@ -81,7 +81,6 @@ internal class SettingsWindow: NSWindow, NSWindowDelegate {
         self.title = "Settings"
         self.contentViewController = self.tabViewController
         self.animationBehavior = .default
-        self.collectionBehavior = .moveToActiveSpace
         self.backgroundColor = .clear
         self.hasShadow = true
         self.center()

@@ -65,18 +65,21 @@ public class Store {
 }
 
 public struct LaunchAtLogin {
-    private static let id = "\(Bundle.main.bundleIdentifier!).LaunchAtLogin"
-    
     public static var isEnabled: Bool {
-        get {
-            guard let jobs = (LaunchAtLogin.self as DeprecationWarningWorkaround.Type).jobsDict else {
-                return false
-            }
-            let job = jobs.first { $0["Label"] as! String == id }
-            return job?["OnDemand"] as? Bool ?? false
-        }
+        get { SMAppService.mainApp.status == .enabled }
         set {
-            SMLoginItemSetEnabled(id as CFString, newValue)
+            do {
+                if newValue {
+                    if SMAppService.mainApp.status == .enabled {
+                        try? SMAppService.mainApp.unregister()
+                    }
+                    try SMAppService.mainApp.register()
+                } else {
+                    try SMAppService.mainApp.unregister()
+                }
+            } catch {
+                print("failed to \(newValue ? "enable" : "disable") launch at login: \(error.localizedDescription)")
+            }
         }
     }
 }

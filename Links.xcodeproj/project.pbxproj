@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		9A74C32128B28A4E0034621E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A74C32028B28A4E0034621E /* Settings.swift */; };
 		9A8D227528B39983008BEDEC /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D227428B39983008BEDEC /* helpers.swift */; };
-		9A8D228A28B3B117008BEDEC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D228928B3B117008BEDEC /* main.swift */; };
-		9A8D228C28B3B149008BEDEC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A8D228B28B3B149008BEDEC /* Info.plist */; };
-		9A8D228E28B3B26A008BEDEC /* LaunchAtLogin.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A8D227A28B3B105008BEDEC /* LaunchAtLogin.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9AC9BC8B28B914F90060020B /* Updater in Frameworks */ = {isa = PBXBuildFile; productRef = 9AC9BC8A28B914F90060020B /* Updater */; };
 		9AD1D8D228B1050100DC1CB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1D8D128B1050100DC1CB3 /* AppDelegate.swift */; };
 		9AD1D8D928B1050300DC1CB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD1D8D828B1050300DC1CB3 /* Assets.xcassets */; };
@@ -26,7 +23,6 @@
 			dstPath = Contents/Library/LoginItems;
 			dstSubfolderSpec = 1;
 			files = (
-				9A8D228E28B3B26A008BEDEC /* LaunchAtLogin.app in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,10 +32,6 @@
 		9A4B46CB28B82A3300D9AF11 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A74C32028B28A4E0034621E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		9A8D227428B39983008BEDEC /* helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpers.swift; sourceTree = "<group>"; };
-		9A8D227A28B3B105008BEDEC /* LaunchAtLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchAtLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A8D228528B3B105008BEDEC /* LaunchAtLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchAtLogin.entitlements; sourceTree = "<group>"; };
-		9A8D228928B3B117008BEDEC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		9A8D228B28B3B149008BEDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AD1D8CE28B1050100DC1CB3 /* Links.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Links.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD1D8D128B1050100DC1CB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AD1D8D828B1050300DC1CB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,13 +41,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9A8D227728B3B105008BEDEC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9AD1D8CB28B1050100DC1CB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,21 +52,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9A8D227B28B3B105008BEDEC /* LaunchAtLogin */ = {
+		5CAC07572A0C309B006C1BD3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9A8D228928B3B117008BEDEC /* main.swift */,
-				9A8D228B28B3B149008BEDEC /* Info.plist */,
-				9A8D228528B3B105008BEDEC /* LaunchAtLogin.entitlements */,
+				9AD1D8D828B1050300DC1CB3 /* Assets.xcassets */,
+				9AD1D8DD28B1050300DC1CB3 /* Links.entitlements */,
+				9A4B46CB28B82A3300D9AF11 /* Info.plist */,
 			);
-			path = LaunchAtLogin;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5CAC07582A0C30ED006C1BD3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9AD1D8E328B1069F00DC1CB3 /* MenuBar.swift */,
+				9A74C32028B28A4E0034621E /* Settings.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9AD1D8C528B1050100DC1CB3 = {
 			isa = PBXGroup;
 			children = (
 				9AD1D8D028B1050100DC1CB3 /* Links */,
-				9A8D227B28B3B105008BEDEC /* LaunchAtLogin */,
 				9AD1D8CF28B1050100DC1CB3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				9AD1D8CE28B1050100DC1CB3 /* Links.app */,
-				9A8D227A28B3B105008BEDEC /* LaunchAtLogin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,14 +90,11 @@
 		9AD1D8D028B1050100DC1CB3 /* Links */ = {
 			isa = PBXGroup;
 			children = (
+				5CAC07582A0C30ED006C1BD3 /* Views */,
+				5CAC07572A0C309B006C1BD3 /* Supporting Files */,
 				9AD1D8D128B1050100DC1CB3 /* AppDelegate.swift */,
-				9AD1D8E328B1069F00DC1CB3 /* MenuBar.swift */,
-				9A74C32028B28A4E0034621E /* Settings.swift */,
 				9AD1D8E528B106EA00DC1CB3 /* item.swift */,
 				9A8D227428B39983008BEDEC /* helpers.swift */,
-				9AD1D8D828B1050300DC1CB3 /* Assets.xcassets */,
-				9AD1D8DD28B1050300DC1CB3 /* Links.entitlements */,
-				9A4B46CB28B82A3300D9AF11 /* Info.plist */,
 			);
 			path = Links;
 			sourceTree = "<group>";
@@ -113,23 +102,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9A8D227928B3B105008BEDEC /* LaunchAtLogin */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9A8D228628B3B105008BEDEC /* Build configuration list for PBXNativeTarget "LaunchAtLogin" */;
-			buildPhases = (
-				9A8D227628B3B105008BEDEC /* Sources */,
-				9A8D227728B3B105008BEDEC /* Frameworks */,
-				9A8D227828B3B105008BEDEC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LaunchAtLogin;
-			productName = LaunchAtLogin;
-			productReference = 9A8D227A28B3B105008BEDEC /* LaunchAtLogin.app */;
-			productType = "com.apple.product-type.application";
-		};
 		9AD1D8CD28B1050100DC1CB3 /* Links */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AD1D8E028B1050300DC1CB3 /* Build configuration list for PBXNativeTarget "Links" */;
@@ -159,12 +131,8 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					9A8D227928B3B105008BEDEC = {
-						CreatedOnToolsVersion = 13.4.1;
-						LastSwiftMigration = 1340;
-					};
 					9AD1D8CD28B1050100DC1CB3 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -187,20 +155,11 @@
 			projectRoot = "";
 			targets = (
 				9AD1D8CD28B1050100DC1CB3 /* Links */,
-				9A8D227928B3B105008BEDEC /* LaunchAtLogin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9A8D227828B3B105008BEDEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9A8D228C28B3B149008BEDEC /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9AD1D8CC28B1050100DC1CB3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,14 +171,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9A8D227628B3B105008BEDEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9A8D228A28B3B117008BEDEC /* main.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9AD1D8CA28B1050100DC1CB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,67 +186,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		9A8D228728B3B105008BEDEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = LaunchAtLogin/LaunchAtLogin.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RP2S87B72W;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.serhiy.Links.LaunchAtLogin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		9A8D228828B3B105008BEDEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = LaunchAtLogin/LaunchAtLogin.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RP2S87B72W;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.serhiy.Links.LaunchAtLogin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		9AD1D8DE28B1050300DC1CB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -329,6 +219,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -389,6 +280,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -414,15 +306,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
-				CODE_SIGN_ENTITLEMENTS = Links/Links.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Links/Supporting Files/Links.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = RP2S87B72W;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/Links/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Links/Supporting Files/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -430,7 +323,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.serhiy.Links;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,15 +338,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
-				CODE_SIGN_ENTITLEMENTS = Links/Links.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Links/Supporting Files/Links.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = RP2S87B72W;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/Links/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Links/Supporting Files/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -461,7 +355,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.serhiy.Links;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -474,15 +368,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9A8D228628B3B105008BEDEC /* Build configuration list for PBXNativeTarget "LaunchAtLogin" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9A8D228728B3B105008BEDEC /* Debug */,
-				9A8D228828B3B105008BEDEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		9AD1D8C928B1050100DC1CB3 /* Build configuration list for PBXProject "Links" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
