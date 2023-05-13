@@ -84,11 +84,11 @@ clean:
 	if [ -a $(PWD)/$(APP).dmg ]; then rm $(PWD)/$(APP).dmg; fi;
 
 next-version:
-	versionNumber=$$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "$(PWD)/$(APP)/Info.plist") ;\
+	versionNumber=$$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "$(PWD)/$(APP)/Supporting Files/Info.plist") ;\
 	echo "Actual version is: $$versionNumber" ;\
 	versionNumber=$$((versionNumber + 1)) ;\
 	echo "Next version is: $$versionNumber" ;\
-	/usr/libexec/PlistBuddy -c "Set :CFBundleVersion $$versionNumber" "$(PWD)/$(APP)/Info.plist" ;\
+	/usr/libexec/PlistBuddy -c "Set :CFBundleVersion $$versionNumber" "$(PWD)/$(APP)/Supporting Files/Info.plist" ;\
 
 open:
 	osascript -e 'display notification "$(APP) signed and ready for distribution" with title "Build the $(APP)"'

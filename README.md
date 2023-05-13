@@ -1,6 +1,6 @@
 # Links
 
-<a href="https://github.com/exelban/links/releases"><p align="center"><img src="https://serhiy.s3.eu-central-1.amazonaws.com/Github_repo/links/logo.png?raw=true" width="120"></p></a>
+<a href="https://github.com/exelban/links/releases"><p align="center"><img src="https://github.com/exelban/links/blob/master/Links/Supporting%20Files/Assets.xcassets/AppIcon.appiconset/128.png?raw=true" width="120"></p></a>
 
 <p align="center">
 <a href="https://github.com/exelban/links/releases"><img src="https://serhiy.s3.eu-central-1.amazonaws.com/Github_repo/links/light-mode.png" width="250"></a>
@@ -11,14 +11,11 @@ Quick access to the links (site) from the menu bar.
 
 ## Installation
 ### Requirements
-Links is currently supported on macOS 11.0 (Big Sur) and higher.
+Links is currently supported on macOS 13.0 (Big Sur) and higher.
 
 ### Manual
 You can download the latest version [here](https://github.com/exelban/links/releases/latest/download/Links.dmg).  
 This will download a file called `Links.dmg `. Open it and move the app to the application folder.
-
-### App Store
-Links is not available in the App Store.
 
 ## Roadmap
 Links is under active development. And there is a list of the most important things that will be added to the app with time:
